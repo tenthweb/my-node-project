@@ -27,17 +27,10 @@ app.get('/api/bus-data', async (req, res) => {
 });
 
 // Start the server
-
-const PORT = process.env.PORT || 3000; // Use Railway's assigned port or default to 3000
+const PORT = process.env.PORT || 3000; // Railway sets PORT dynamically
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-
-// Your routes and middleware would go here
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
 
 
