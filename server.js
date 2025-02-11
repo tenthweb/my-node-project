@@ -33,8 +33,6 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-// Set the port to the value provided by Heroku, or 3000 for local development
-const PORT = process.env.PORT || 3000;
 
 // Your routes and middleware would go here
 
