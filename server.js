@@ -1,7 +1,8 @@
 
 // Import dependencies
+
+import fetch from 'node-fetch';
 const express = require('express');
-const fetch = require('node-fetch');
 const axios = require('axios');// Or use axios if preferred
 const app = express();
 
