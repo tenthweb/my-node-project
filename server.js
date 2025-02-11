@@ -2,8 +2,8 @@
 // Import dependencies
 
 import fetch from 'node-fetch';
-import axios from 'node-axios';
-import express from 'node-express';
+import axios from 'axios';
+import express from 'express';
 
 const app = express();
 
