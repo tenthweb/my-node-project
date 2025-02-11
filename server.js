@@ -2,8 +2,9 @@
 // Import dependencies
 
 import fetch from 'node-fetch';
-const express = require('express');
-const axios = require('axios');// Or use axios if preferred
+import axios from 'node-axios';
+import express from 'node-express';
+
 const app = express();
 
 // Define a route to fetch bus data
