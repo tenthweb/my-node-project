@@ -27,9 +27,10 @@ app.get('/api/bus-data', async (req, res) => {
 });
 
 // Start the server
-const port = 3000;
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+
+const PORT = process.env.PORT || 3000; // Use Railway's assigned port or default to 3000
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
 // Set the port to the value provided by Heroku, or 3000 for local development
@@ -40,6 +41,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
 
 
